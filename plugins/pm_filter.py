@@ -1398,7 +1398,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>ʜᴇʀᴇ ɪꜱ ᴡʜᴀᴛ ɪꜱ ꜰᴏᴜɴᴅ ʏᴏᴜʀ Qᴜᴇʀʏ:\n\n {search}\n👤ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ : {message.from_user.mention}\n👥ɢʀᴏᴜᴘ : {message.chat.title}\n\nNᴏᴛᴇ ‣ Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ ʙᴇ Aᴜᴛᴏ-Dᴇʟᴇᴛᴇᴅ Aғᴛᴇʀ 05 Mɪɴᴜᴛᴇs.</b>"
+        cap = f"<b>ᴡʜᴀᴛ ɪꜱ ꜰᴏᴜɴᴅ ʏᴏᴜʀ Qᴜᴇʀʏ: {search}\n\n👤ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ : {message.from_user.mention}\n👥ɢʀᴏᴜᴘ : {message.chat.title}\n\nNᴏᴛᴇ ‣ Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ ʙᴇ Aᴜᴛᴏ-Dᴇʟᴇᴛᴇᴅ Aғᴛᴇʀ 05 Mɪɴᴜᴛᴇs.</b>"
     if imdb and imdb.get('poster'):
         try:
             if message.chat.id == SUPPORT_CHAT_ID:
