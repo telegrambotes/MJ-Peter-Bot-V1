@@ -188,7 +188,7 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f' 🎬 {search} 🎬 ', 'qinfo')
+            InlineKeyboardButton(f'🎬 ℍ𝕠𝕨 𝕋𝕠 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕 🎬', 'qinfo')
         ]
     )
     btn.insert(1, 
@@ -1133,7 +1133,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f' 🎬 {search} 🎬 ', 'qinfo')
+            InlineKeyboardButton(f'🎬 ℍ𝕠𝕨 𝕋𝕠 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕 🎬', 'qinfo')
         ]
     )
     btn.insert(1, 
