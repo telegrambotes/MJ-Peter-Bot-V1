@@ -45,21 +45,21 @@ API_ID = int(environ['API_ID'])
 API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['BOT_TOKEN']
 
-# Bot settings
+# Bot settingsb58f576fed14cd645d2cf
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/2992a480cae2bc0de1c39.jpg https://telegra.ph/file/76e7b5e94430b84a3d2b2.jpg https://telegra.ph/file/3544a8773740b0412c9dd.jpg https://telegra.ph/file/4b1c7004ea8bd3fed8df9.jpg https://telegra.ph/file/a02e47d932adc336740fa.jpg')).split()
-NOR_IMG = environ.get('NOR_IMG', "")
-SPELL_IMG = environ.get('SPELL_IMG',"https://telegra.ph/file/b58f576fed14cd645d2cf.jpg")
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/ab33dea823a0b37f00df8.jpg')).split()
+NOR_IMG = environ.get('NOR_IMG', "https://te.legra.ph/file/233841c6c0804647d74c8.jpg")
+SPELL_IMG = environ.get('SPELL_IMG',"https://te.legra.ph/file/f304c726371d876ba39c0.jpg")
 
 # Welcome area
-MELCOW_IMG = environ.get('MELCOW_IMG',"https://telegra.ph/file/e54cae941b9b81f13eb71.jpg")
+MELCOW_IMG = environ.get('MELCOW_IMG',"https://te.legra.ph/file/6a18369a297b79b26752a.jpg")
 MELCOW_VID = environ.get('MELCOW_VID',"")
 
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1061576483').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -75,8 +75,8 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Jayanna:Jayanna2023@yash.tm1c2bd.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Peter_filter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
 
@@ -84,13 +84,13 @@ MONGO_URL = os.environ.get('MONGO_URL', "")
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 #url links
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shorturllink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '0171eba95f837a455105157e33525e949b2b95c2')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'mrlinks.xyz')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'bf901a1e4b775419d81f89bf396337bcdbb147c9')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 
 #Auto approve 
 #In private group or channel must enable request admin approval 
-CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1001863919592').split()]
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1001739889782').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
@@ -103,13 +103,13 @@ MAX_BTN = int(environ.get('MAX_BTN', "10"))
 S_GROUP = environ.get('S_GROUP',"https://t.me/MLZ_BOTZ_SUPPORT")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/MLZ_BOTZ")
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/fileschannellls")
-MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺...')
+MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001766104157'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MLZ_BOTZ_SUPPORT')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CUSTOM_FILE_CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
