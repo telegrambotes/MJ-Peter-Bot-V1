@@ -47,7 +47,7 @@ async def start(client, message):
             InlineKeyboardButton("🔄 Sʜᴀʀᴇ Mᴇ", url="https://telegram.me/share/url?url=https://bit.ly/3E19G7l"), 
             InlineKeyboardButton("🤖 Uᴘᴅᴀᴛᴇs", url="https://t.me/alexa_movies")
             ],[      
-            InlineKeyboardButton("❗ Hᴇʟᴘ", callback_data="help"),
+            InlineKeyboardButton("❗ Hᴇʟᴘ", callback_data="help2"),
             InlineKeyboardButton("🕵️ Aʙᴏᴜᴛ", callback_data="about")
             ],[
             InlineKeyboardButton('🔒 Cʟᴏsᴇ Mᴇɴᴜ', callback_data='close_data')
