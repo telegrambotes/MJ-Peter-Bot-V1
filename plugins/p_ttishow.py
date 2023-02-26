@@ -59,15 +59,14 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=S_GROUP),
-                                                                           InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=MAIN_CHANNEL)
+                                                                           InlineKeyboardButton('ʀᴇᴀᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs 📌', url=f'https://te.legra.ph/How-to-get-movies--series-from-Bot-02-13-2')
                                                                         ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
                 )
                 
         if settings["auto_delete"]:
-            await asyncio.sleep(600)
+            await asyncio.sleep(80)
             await (temp.MELCOW['welcome']).delete()
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
