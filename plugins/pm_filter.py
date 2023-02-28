@@ -188,7 +188,7 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🎬 ℍ𝕠𝕨 𝕋𝕠 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕 🎬', 'qinfo')
+            InlineKeyboardButton(f'🎬 ℍ𝕠𝕨 𝕋𝕠 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕 🎬', url=HOW_DWLD_LINK)
         ]
     )
     btn.insert(1, 
