@@ -1,7 +1,10 @@
 import re
 import os
 from os import environ
-from pyrogram import enums
+
+from pyrogram import Client, filters, enums
+
+
 from Script import script
 
 import asyncio
