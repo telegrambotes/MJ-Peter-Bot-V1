@@ -52,12 +52,12 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settingsb58f576fed14cd645d2cf
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://te.legra.ph/file/ab33dea823a0b37f00df8.jpg')).split()
-NOR_IMG = environ.get('NOR_IMG', "https://te.legra.ph/file/233841c6c0804647d74c8.jpg")
+PICS = (environ.get('PICS', 'https://graph.org/file/524297d8a2cd2668e91b8.jpg')).split()
+NOR_IMG = environ.get('NOR_IMG', "https://graph.org/file/e75eef3fbdfc33a852de3.jpg")
 SPELL_IMG = environ.get('SPELL_IMG',"https://te.legra.ph/file/f304c726371d876ba39c0.jpg")
 
 # Welcome area
-MELCOW_IMG = environ.get('MELCOW_IMG',"https://te.legra.ph/file/6a18369a297b79b26752a.jpg")
+MELCOW_IMG = environ.get('MELCOW_IMG',"https://graph.org/file/82b697e8db95248616a45.jpg")
 MELCOW_VID = environ.get('MELCOW_VID',"")
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/mj_bypass_link')
 
@@ -66,7 +66,7 @@ IMDB_LINK = environ.get('IMDB_LINK', 'https://imdb.com/find?q={search}')
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1061576483').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1365052525').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
@@ -91,11 +91,11 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 #url links
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'mrlinks.xyz')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'bf901a1e4b775419d81f89bf396337bcdbb147c9')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 
 #Auto approve 
 #In private group or channel must enable request admin approval 
-CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1001739889782').split()]
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1001858831083').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
@@ -105,7 +105,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "10"))
-S_GROUP = environ.get('S_GROUP',"https://t.me/muryana_contact_bot")
+S_GROUP = environ.get('S_GROUP',"https://t.me/Mj_supportbot")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/MJhitz")
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+LVIj5IDtqjc5ODVl")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
@@ -116,7 +116,7 @@ AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>📁ғɪʟᴇ ɴᴀᴍᴇ</b> : <code>{file_name}</code> \n<b>\n🎬 Cʜᴀɴɴᴇʟ : [𝐍м Ｍ𝐨ᵛᎥᗴｓ](https://t.me/mjhitz)\n</b>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>📁ғɪʟᴇ ɴᴀᴍᴇ</b> : <code>{file_name}</code> \n<b>\n🎬 Cʜᴀɴɴᴇʟ : [ᎷᏠ Ｍ𝐨ᵛᎥᗴｓ](https://t.me/mjhitz)\n</b>")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
