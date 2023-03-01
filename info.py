@@ -1,7 +1,31 @@
 import re
 import os
 from os import environ
+from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings, get_shortlink
 
+from database.users_chats_db import db
+
+from database.ia_filterdb import Media, get_file_details, get_search_results, get_bad_files
+
+from database.filters_mdb import (
+
+    del_all,
+
+    find_filter,
+
+    get_filters,
+
+)
+
+from database.gfilters_mdb import (
+
+    find_gfilter,
+
+    get_gfilters,
+
+)
+
+import logging
 from pyrogram import Client, filters, enums
 
 
@@ -60,7 +84,7 @@ MELCOW_IMG = environ.get('MELCOW_IMG',"https://te.legra.ph/file/6a18369a297b79b2
 MELCOW_VID = environ.get('MELCOW_VID',"")
 HOW_DWLD_LINK = environ.get('HOW_DWLD_LINK', 'https://t.me/How_To_Download_NM_Links/20')
 
-IMB_LINK = environ.get('IMDB_LINK', 'https://imdb.com/find?q={search}')
+IMDB_LINK = environ.get('IMDB_LINK', 'https://imdb.com/find?q={search}')
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1061576483').split()]
