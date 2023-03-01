@@ -774,7 +774,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("🔄 Sʜᴀʀᴇ Mᴇ", url=f'https://t.me/share/url?url=t.me/{temp.U_NAME}'), 
-            InlineKeyboardButton("🤖 Uᴘᴅᴀᴛᴇs", url="https://t.me/muryana_movies")
+            InlineKeyboardButton("🤖 Uᴘᴅᴀᴛᴇs", url="https://t.me/mjhitz")
             ],[      
             InlineKeyboardButton("❗ Hᴇʟᴘ", callback_data="help2"),
             InlineKeyboardButton("🕵️ Aʙᴏᴜᴛ", callback_data="about")
@@ -828,7 +828,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', callback_data='updates'),
-            InlineKeyboardButton('👩‍💻 Sᴏᴜʀᴄᴇ', url='https://t.me/muryana_contact_bot'),
+            InlineKeyboardButton('👩‍💻 Sᴏᴜʀᴄᴇ', url='https://t.me/mj_supportbot'),
         ],[
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('🔒 ᴄʟᴏsᴇ', callback_data='close_data')
@@ -855,8 +855,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "updates":
         buttons = [[
-            InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ', url='https://t.me/muryana_contact_bot'),
-            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/muryana_movies')
+            InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ', url='https://t.me/mj_supportbot'),
+            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/mjhitz')
             ],[
             InlineKeyboardButton('⟸ ʙᴀᴄᴋ', callback_data='about')
         ]]
