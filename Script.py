@@ -10,8 +10,8 @@ class script(object):
 # ⚠️ Please don't change our credits 👇🏻
 
     ABOUT_TXT = """<b>✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/muryana_contact_bot>𒆜 𝓛ⓔﻮ𝕖𝓷ｄ ࿐</a>
-✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂: <a href=https://t.me/muryana_movies>η𝐌 ϻό𝓥𝐢є𝓼</a>
+✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/MJ_supportbot>𒆜 𝓛ⓔﻮ𝕖𝓷ｄ ࿐</a>
+✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂: <a href=https://t.me/MJhitz>ᎷᏠ ϻό𝓥𝐢є𝓼</a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
@@ -258,7 +258,7 @@ This module only works for my admins
     CUDNT_FND = """ʜᴇʟʟᴏ {} ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?"""
 
     REPRT_MSG = """ Join our group ask movies there
-    <code>[JOIN GROUP](buttonurl:https://t.me/Muryana_Movies_request_group)</code>"""
+    <code>[JOIN GROUP](buttonurl:https://t.me/+0fMMY79eUKExYjk1)</code>"""
 
    
     UPDATES_TXT = """⍟ Cʜᴀɴɴᴇʟs & Gʀᴏᴜᴘs Mᴏᴅᴜʟᴇ ⍟
@@ -278,8 +278,8 @@ This module only works for my admins
 ➪ /pbatch ›› <b>𝚄𝚂𝙴 𝚈𝙾𝚄𝚁 𝙼𝙴𝙳𝙸𝙰 𝙻𝙸𝙽𝙺 𝚆𝙸𝚃𝙷 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳.</b>
 ➪ /batch ›› <b>𝚃𝙾 𝙲𝚁𝙴𝙰𝚃𝙴 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙼𝚄𝙻𝚃𝙸𝙿𝙻𝙴 𝙵𝙸𝙻𝙴𝚂.</b>
 ⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
-<code>/batch https://t.me/MatRixBotzTG https://t.me/MatRixBotzTG</code>
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/muryana_contact_bot><b>𒆜 𝓛ⓔﻮ𝕖𝓷ｄ ࿐<\b></a>"""
+<code>/batch https://t.me/example https://t.me/example</code>
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/MJ_supportbot><b>𒆜 𝓛ⓔﻮ𝕖𝓷ｄ ࿐<\b></a>"""
 
 
 
