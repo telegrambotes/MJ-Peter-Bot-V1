@@ -59,7 +59,7 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton('ʀᴇᴀᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs 📌', url=f'https://te.legra.ph/How-to-get-movies--series-from-Bot-02-13-2')
+                                                                           InlineKeyboardButton('ʀᴇᴀᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs 📌', url='https://telegra.ph/%CA%9C%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%C9%A2%E1%B4%87%E1%B4%9B-%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87s--s%E1%B4%87%CA%80%C9%AA%E1%B4%87s-%D2%93%CA%80%E1%B4%8F%E1%B4%8D-%CA%99%E1%B4%8F%E1%B4%9B-03-02')
                                                                         ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
