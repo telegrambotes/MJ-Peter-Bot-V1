@@ -1,5 +1,7 @@
 # Kanged From @TroJanZheX
 # REDIRECT added https://github.com/Joelkb
+import re
+from os import environ
 import asyncio
 import re
 import ast
@@ -35,7 +37,7 @@ logger.setLevel(logging.ERROR)
 BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
-
+I_LINK = environ.get('HOW_DWLD_LINK', 'https://imdb.com/find?q={search}')
 
 @Client.on_message(filters.command('autofilter') & filters.user(ADMINS))
 async def fil_mod(client, message): 
