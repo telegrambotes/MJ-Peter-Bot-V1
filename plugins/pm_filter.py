@@ -196,7 +196,7 @@ async def next_page(bot, query):
     )
     btn.insert(1, 
          [
-             InlineKeyboardButton("Iɴꜰᴏ", url=IMDB_LINK),
+             InlineKeyboardButton("Iɴꜰᴏ", url=I_LINK),
              InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
              InlineKeyboardButton(f'sᴇʀɪᴇs', 'sinfo')
              
