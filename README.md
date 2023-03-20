@@ -58,6 +58,9 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?templatehttps://github.com/Jayanth14072003/My-peter-MJ)
 
+## Deploy to Heroku 
+
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Jayanth14072003/My-peter-MJ)
 
 ## Deploy to Render
 
