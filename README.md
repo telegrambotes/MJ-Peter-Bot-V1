@@ -56,6 +56,9 @@
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Jayanth14072003/My-peter-MJ)
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?templatehttps://github.com/Jayanth14072003/My-peter-MJ)
+
+
 ## Deploy to Render
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/matrixbotz0/PETER-PARKER-BOT)
