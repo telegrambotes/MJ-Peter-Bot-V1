@@ -491,7 +491,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if query.message.chat.type == enums.ChatType.PRIVATE:
             await query.answer()
-            await client.send_cached_media(
+            na = await client.send_cached_media(
                 chat_id=query.from_user.id,
                 file_id=file_id,
                 caption=f_caption,
@@ -505,7 +505,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
             )
             return
-        
+            naa = await na.reply_text(f"<b>ᴛʜɪs ғɪʟᴇ/ᴠɪᴅᴇᴏ ɪs ᴅᴇʟᴇᴛᴇ ᴀғᴛᴇʀ 𝟷 ʜᴏᴜʀ sᴏ, ᴘʟᴇᴀsᴇ sᴀᴠᴇ ᴏʀ ғᴏʀᴡᴏʀᴅ ɪᴛ.\n\nಈ ಫೈಲ್ ಒಂದು ಗಂಟೆಯ ನಂತರ ಡಿಲೀಟ್ ಆಗುತ್ತದೆ, ಆದ್ದರಿಂದ ಈ ಫೈಲ್ ಅನ್ನು ಫಾರ್ವರ್ಡ್ ಅಥವಾ ಸೇವ್ ಮಾಡಿಕೊಳ್ಳಿ.</b>", quote=True, reply_markup=reply_markup)
+            await asyncio.sleep(3600)
+            await naa.delete()
+            await na.delete()
+            
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
                 if clicked == typed:
